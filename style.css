@@ -61,6 +61,7 @@ body{
     gap:10px;
     flex-direction:column;
     font-family:'DM Sans',sans-serif;
+    overflow:hidden;
 
 }
 .card1 img{
@@ -77,10 +78,15 @@ body{
     font-style:italic;
 }
 
+.card5 img{
+    width: 45%;
+}
+
 .card5{
   display:flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 20px
+  align-items: center;
 }
 
 .card1 h1{
@@ -124,9 +130,10 @@ body{
 .card6 h1{
   font-family:'DM Sans';
   font-weight:500;
-  font-size: 60px;
-
+  font-size: 56px;
+  line-height: 1;
 }
+
 
 .card6 span{
 
@@ -157,6 +164,11 @@ body{
 .card4 img{
     transform: scaleX(1) translateX(76px);
      width: 160%;
+}
+
+.card8 img{
+    width: 100%;
+    max-width: 220px;
 }
 
     .card1{
