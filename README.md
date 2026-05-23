@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/pavithrakcdgms2425-bot/bento-grid-main.git]
 - Live Site URL: [https://pavithrakcdgms2425-bot.github.io/bento-grid-main/]
 
 ## My process
