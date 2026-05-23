@@ -18,7 +18,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://pavithrakcdgms2425-bot.github.io/bento-grid-main/]
 
 ## My process
 
@@ -90,9 +90,8 @@ In future projects, I want to continue improving:
 
 ## Author
 
-- Website - [Pavithra K](https://www.your-site.com)
-- Frontend Mentor - [@pavithrakcdgms2425-bot](https://www.frontendmentor.io/profile/pavithrakcdgms2425-bot)
-- GitHub - https://github.com/pavithrakcdgms2425-bot
+- Frontend Mentor - [https://www.frontendmentor.io/profile/pavithrakcdgms2425-bot]
+- GitHub - [https://github.com/pavithrakcdgms2425-bot]
 
 ## Acknowledgements
 
