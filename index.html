@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Bento grid</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { 
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 20px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    @font-face {
+  font-family: 'DM Sans';
+  src: url('./assets/fonts/DMSans-Regular.ttf');
+}
+   @font-face {
+   font-family: 'DM Sans';
+   src: url('./assets/fonts/DMSans-Italic.ttf');
+   font-style: italic;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+      background-color:  #F5F5F5;
+      font-size: 18px;
+      font-family: 'DM Sans', sans-serif;
+      margin:0;
+    }
+.container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    max-width:1100px;
+    margin:auto;
+    padding:30px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+                "card7 card1 card1 card4"
+                "card7 card1 card1 card4"
+                "card7 card2 card3 card4"
+                "card8 card2 card3 card4"
+                "card8 card6 card5 card5"
+                "card8 card6 card5 card5";
+        }
+
+
+    
+        img{
+    width:100%;
+    display:block;
+  }
+
+  h1,h2,h3,p{
+   margin:0;
+}
+
+  .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8{
+    padding:20px;
+    border-radius:10px;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    gap:10px;
+    flex-direction:column;
+    font-family:'DM Sans',sans-serif;
+
+}
+.card1 img{
+    width:55%;
+    margin:auto;
+}
+
+.card1 h1 span{
+    color:hsl(39, 100%, 71%);
+}
+
+.card1 em{
+    font-family:'DM Sans';
+    font-style:italic;
+}
+
+.card5{
+  display:flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.card1 h1{
+    font-size:3rem;
+    line-height:0.9;
+    text-align:center;
+    margin:0;
+    font-weight:500;
+}
+
+.card7 h1{
+  font-family:'DM Sans';
+  font-weight:500;
+  line-height:0.9;
+}
+
+.card8 h1{
+  font-family:'DM Sans';
+  font-weight:500;
+  line-height:0.9;
+}
+
+.card7 h1 span{
+  color: hsl(256, 67%, 59%); 
+  font-family:'DM Sans';
+  font-style:italic;}
+
+  .card5 h2{
+   font-family:'DM Sans';
+  font-weight:500;
+  line-height:0.9;
+  font-size: 32px;
+}
+
+.card2 h2{
+  font-family:'DM Sans';
+  font-weight:500;
+  line-height:0.9;
+}
+
+.card6 h1{
+  font-family:'DM Sans';
+  font-weight:500;
+  font-size: 60px;
+
+}
+
+.card6 span{
+
+  font-family:'DM Sans';
+  font-size: 16px;
+}
+
+.card3 h2{
+  font-family:'DM Sans';
+  font-weight:500;
+  line-height:0.9;
+  justify-content:center;
+}
+
+.card3 img{
+    width: 100%;
+    transform: translateY(60px);
+    margin-top: -40px;
+}
+
+.card4 h2{
+  font-family:'DM Sans';
+  line-height:0.9;
+  font-weight: 500;
+
+}
+
+.card4 img{
+    transform: scaleX(1) translateX(76px);
+     width: 160%;
+}
+
+    .card1{
+      background-color: hsl(256, 67%, 59%);
+      grid-area: card1;
+      color:white;
+    }
+    .card2{
+      background-color: white ;
+      grid-area: card2;
+    }
+    .card3{
+      background-color: hsl(39, 100%, 71%);
+      grid-area: card3;
+      padding-bottom: 0%;
+      overflow: hidden;
+      gap:0;
+    }
+    .card4{
+      background-color:  hsl(254, 88%, 90%);
+      grid-area: card4;
+      overflow: hidden;
+    }
+    .card5{
+    background-color: hsl(256, 67%, 59%);
+    grid-area: card5;
+    color:white;
+    }
+    .card6{
+    background-color: white;
+    grid-area: card6;
+    }
+    .card7{
+    background-color: hsl(31, 66%, 93%);
+    grid-area: card7;
+    }
+    .card8{
+    background-color: hsl(39, 100%, 71%);
+    grid-area: card8;
+    }
+    .attribution br{
+      display: none;
+    }
+
+    @media screen and (max-width: 768px){
+
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8";
+
+        max-width: 340px;
+        padding: 12px;
+        margin: auto;
+    }
+
+    .card1 h1{
+        font-size: 2.9rem;
+    }
+
+    .card1 img{
+        width: 70%;
+    }
+
+    .card2,
+    .card3,
+    .card4,
+    .card6,
+    .card7,
+    .card8{
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .card2 h2,
+    .card3 h2,
+    .card4 h2,
+    .card7 h1,
+    .card8 h1{
+        font-size: 1.25rem;
+        line-height: 0.9;
+    }
+
+    .card3{
+        padding-bottom: 0;
+    }
+
+    .card3 img{
+        width: 75%;
+        transform: translateY(35px);
+        margin-top: -10px;
+    }
+
+    .card4{
+        align-items: center;
+        text-align: center;
+    }
+
+    .card4 img{
+        width: 100%;
+        transform: none;
+    }
+
+    .card4 p{
+        width: 90%;
+    }
+
+    .card5{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card5 img{
+        width: 80%;
+    }
+
+    .card5 h2{
+        font-size: 2.2rem;
+        line-height: 0.9;
+    }
+
+    .card6 h1{
+        font-size: 4rem;
+    }
+
+    .card6 img{
+        width: 65%;
+    }
+
+    .card7 img{
+        width: 75%;
+    }
+
+    .card8 img{
+        width: 80%;
+    }
+
+    .attribution br{
+    display:block;
+}
+
+.attribution {
+  font-size: 0.755rem;
+}
+
+
+}
+
+  </style>
+</head>
+<body>
+<div class="container">
+<div class = "card1">
+  <h1>Social Media <span>10x</span><br> <em>Faster</em> with AI</h1>
+  <img src="./assets/images/illustration-five-stars.webp">
+  <p>Over 4,000 5-star reviews</p>
+</div>
+<div class = "card2">
+  <img src="./assets/images/illustration-multiple-platforms.webp">
+  <h2>Manage multiple accounts and platforms.</h2>
+</div>
+<div class = "card3">
+   <h2>Maintain a consistent posting schedule.</h2>
+  <img src="./assets/images/illustration-consistent-schedule.webp">
+</div>
+<div class = "card4">
+  <h2>Schedule to social media.</h2>
+    <img src="./assets/images/illustration-schedule-posts.webp">
+    <p>Optimize post timings to publish content at the perfect time for your audience.</p>
+</div>
+<div class = "card5">
+  <img src="./assets/images/illustration-grow-followers.webp">
+    <h2>Grow followers with non-stop content.</h2>
+</div>
+<div class = "card6">
+  <h1>>56%</h1><span>faster audience growth</span>
+    <img src="./assets/images/illustration-audience-growth.webp">
+</div>
+<div class = "card7">
+   <h1>Create and schedule content <span>quicker.</span></h1>
+    <img src="./assets/images/illustration-create-post.webp">
+</div>
+<div class = "card8">
+  <h1>Write your content using AI.</h1>
+    <img src="./assets/images/illustration-ai-content.webp">
+</div>
+</div>
+<footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. <br>
+    Coded by <a href="#">Pavithra K</a>.
+</footer>
+</body>
+</html>
